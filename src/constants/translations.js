@@ -13,6 +13,7 @@ const translations = {
       { id: "about",    label: "عني",            page: "home", anchor: "about" },
       { id: "sessions", label: "لقاءات عن بعد",  page: "sessions" },
       { id: "contact",  label: "تواصل معنا",     page: "contact" },
+      { id: "pub",      label: "اصدارات",        page: null, soon: true },
     ],
 
     // ── Hero ──────────────────────────────────────────────────
@@ -35,8 +36,8 @@ const translations = {
 
     // ── Mission ───────────────────────────────────────────────
     missionLbl:   "رسالتي",
-    missionTitle: "الوعي والتوازن",
-    missionSub:   "رحلة نحو حياة أكثر سلامًا",
+    missionTitle: "رحلة نحو حياة أكثر سلامًا",
+    missionSub:   "",
     missionBody1: "نشر الوعي النفسي ومساعدة الأفراد على فهم أنفسهم واكتشاف قوتهم الداخلية للوصول إلى حياة أكثر توازنًا وسلامًا.",
     missionBody2: "مهمتي: تمكين الأفراد من تطوير وعيهم النفسي والعاطفي ليصبحوا أشخاصًا أكثر وعيًا وتأثيرًا في حياتهم ومجتمعهم، والمساهمة في بناء جيل واعٍ قادر على القيادة بإنسانية.",
     missionBtn:   "تواصلي معنا",
@@ -125,6 +126,7 @@ const translations = {
     interviewWatch: "مشاهدة اللقاء على فيسبوك",
 
     // ── Footer ────────────────────────────────────────────────
+    footerTagline: "معالجة نفسية · داعمة للوعي والتطوير الذاتي",
     footerRights: "جميع الحقوق محفوظة",
     footerCo:     "روساليندا عبدربه",
   },
@@ -138,6 +140,7 @@ const translations = {
       { id: "about",    label: "About",           page: "home", anchor: "about" },
       { id: "sessions", label: "Remote Sessions", page: "sessions" },
       { id: "contact",  label: "Contact",         page: "contact" },
+      { id: "pub",      label: "Publications",    page: null, soon: true },
     ],
 
     heroGreeting: "Welcome, I'm glad you're here.",
@@ -240,6 +243,7 @@ const translations = {
     interviewNote:  "Rosalinda explained that psychological trauma does not always appear immediately after an event; symptoms may be delayed by weeks or even months. She also referenced WHO data showing elevated stress levels in communities facing difficult circumstances, highlighting the importance of community awareness and early psychological support.",
     interviewWatch: "Watch the Interview on Facebook",
 
+    footerTagline: "Psychologist · Supporting Awareness & Personal Growth",
     footerRights: "All rights reserved",
     footerCo:     "Rosalinda Abedrabbo",
   },

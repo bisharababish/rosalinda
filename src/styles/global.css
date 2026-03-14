@@ -220,6 +220,26 @@ body {
   background: rgba(201, 168, 130, .1)
 }
 
+.nav-link-soon {
+  opacity: .45;
+  cursor: default;
+  position: relative
+}
+.nav-link-soon:hover { color: inherit }
+
+.nav-soon-badge {
+  font-size: .55rem;
+  letter-spacing: .06em;
+  background: var(--g1);
+  color: #1a1008;
+  padding: .1rem .35rem;
+  border-radius: 20px;
+  margin-inline-start: .35rem;
+  font-weight: 700;
+  vertical-align: middle;
+  opacity: .85
+}
+
 /* lang btn */
 .nav-lang {
   font-family: 'Cormorant Garamond', serif;
@@ -1937,31 +1957,40 @@ body {
 
 /* ─── FOOTER ──────────────────────────────── */
 .footer {
-  background: var(--dk);
-  color: rgba(255, 255, 255, .45);
-  padding: 2.5rem 2rem
+  background: #1a1008;
+  color: rgba(255,255,255,.42);
+  padding: 4rem 2rem 0
 }
 
-.ft-in {
+.ft-main {
   max-width: 1160px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1.4rem
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr;
+  gap: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255,255,255,.08)
 }
+
+@media(max-width:760px){
+  .ft-main { grid-template-columns: 1fr; gap: 2rem }
+}
+
+.ft-col { display: flex; flex-direction: column; gap: .9rem }
+
+.ft-brand { gap: 1.1rem }
 
 .ft-logo {
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: .65rem
+  gap: .65rem;
+  width: fit-content
 }
 
 .ft-logo-img {
-  width: 64px;
-  height: 64px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
   flex-shrink: 0
 }
@@ -1969,7 +1998,7 @@ body {
 .ft-logo-div {
   width: 1px;
   height: 30px;
-  background: rgba(255, 255, 255, .2);
+  background: rgba(255,255,255,.18);
   flex-shrink: 0
 }
 
@@ -1992,40 +2021,108 @@ body {
   font-family: 'Amiri', serif;
   font-size: .68rem;
   font-weight: 400;
-  color: rgba(255, 255, 255, .5);
+  color: rgba(255,255,255,.45);
   letter-spacing: .12em;
   line-height: 1
 }
 
-.ft-copy {
-  font-size: .78rem;
-  text-align: center
+.ft-tagline {
+  font-size: .8rem;
+  color: rgba(255,255,255,.38);
+  line-height: 1.6;
+  max-width: 260px;
+  margin: 0
 }
+
+.ft-col-ttl {
+  font-family: 'Amiri', serif;
+  font-size: .78rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--g1);
+  margin: 0 0 .4rem;
+  font-weight: 600
+}
+
+.ft-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .55rem
+}
+
+.ft-link {
+  font-size: .84rem;
+  color: rgba(255,255,255,.5);
+  cursor: pointer;
+  transition: color .25s
+}
+.ft-link:hover { color: var(--g1) }
+
+.ft-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .8rem
+}
+
+.ft-contact li { display: flex; align-items: center; gap: .6rem }
+
+.ft-ci {
+  font-size: .85rem;
+  color: var(--g1);
+  flex-shrink: 0
+}
+
+.ft-ca {
+  font-size: .82rem;
+  color: rgba(255,255,255,.5);
+  text-decoration: none;
+  transition: color .25s;
+  word-break: break-all
+}
+.ft-ca:hover { color: var(--g1) }
 
 .ft-soc {
   display: flex;
-  gap: .7rem
+  gap: .6rem;
+  margin-top: .4rem
 }
 
 .ft-s {
-  width: 36px;
-  height: 36px;
-  border: 1px solid rgba(255, 255, 255, .12);
-  border-radius: 3px;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255, 255, 255, .4);
+  color: rgba(255,255,255,.38);
   text-decoration: none;
-  font-size: .7rem;
+  font-size: .68rem;
   font-weight: 700;
   transition: all .3s var(--ease)
 }
-
 .ft-s:hover {
   border-color: var(--g1);
   color: var(--g1);
   transform: translateY(-2px)
+}
+
+.ft-bar {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 1.2rem 0 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: .75rem;
+  color: rgba(255,255,255,.28);
+  flex-wrap: wrap;
+  gap: .5rem
 }
 
 /* ─── PNN INTERVIEW ───────────────────────── */

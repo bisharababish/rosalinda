@@ -72,7 +72,6 @@ export default function SessionsPage({ t, onNav }) {
           <Rv>
             <div className="lbl">{isAr ? "خدمة ١" : "Service 1"}</div>
             <div className="svc-sec-hd">
-              <span className="svc-sec-icon">🧠</span>
               <div>
                 <h2 className="ttl" style={{ marginBottom: ".3rem" }}>
                   {isAr ? "جلسات نفسية فردية" : "Individual Psychological Sessions"}

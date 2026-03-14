@@ -19,12 +19,12 @@ export default function Navbar({ t, scrolled, currentPage, onNav, onToggleLang }
         style={{ order: isAr ? 3 : 0 }}
         onClick={() => onNav("home")}
       >
-        <img src={IMG.logo} alt="logo" className="nav-logo-img" />
-        <span className="nav-logo-div" />
         <span className="nav-logo-text">
           <span className="nav-logo-first">{first}</span>
           {last && <span className="nav-logo-last">{last}</span>}
         </span>
+        <span className="nav-logo-div" />
+        <img src={IMG.logo} alt="logo" className="nav-logo-img" />
       </span>
 
       <div className="nav-space" style={{ order: isAr ? 2 : 1 }} />
@@ -33,12 +33,19 @@ export default function Navbar({ t, scrolled, currentPage, onNav, onToggleLang }
       <ul className="nav-links" style={{ order: isAr ? 1 : 2 }}>
         {t.links.map((lk) => (
           <li key={lk.id}>
-            <span
-              className={`nav-link${isActive(lk) ? " act" : ""}`}
-              onClick={() => onNav(lk.page, lk.anchor)}
-            >
-              {lk.label}
-            </span>
+            {lk.soon ? (
+              <span className="nav-link nav-link-soon">
+                {lk.label}
+                <span className="nav-soon-badge">{isAr ? "قريبًا" : "Soon"}</span>
+              </span>
+            ) : (
+              <span
+                className={`nav-link${isActive(lk) ? " act" : ""}`}
+                onClick={() => onNav(lk.page, lk.anchor)}
+              >
+                {lk.label}
+              </span>
+            )}
           </li>
         ))}
       </ul>

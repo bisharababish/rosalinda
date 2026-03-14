@@ -90,7 +90,7 @@ export default function HomePage({ t, onNav }) {
       <section className="sec mission">
         <div className="si" style={{ maxWidth: 720, textAlign: "center" }}>
           <Rv>
-            <div className="lbl" style={{ justifyContent: "center", color: "rgba(201,168,130,.62)" }}>
+            <div className="lbl" style={{ justifyContent: "center", color: "rgba(201,168,130,.62)", fontSize: "1rem" }}>
               {t.missionLbl}
             </div>
             <div className="m-orn" />
@@ -100,7 +100,7 @@ export default function HomePage({ t, onNav }) {
           <Rv d={120}>
             <div className="m-body">
               <p>{t.missionBody1}</p>
-              <div className="lbl" style={{marginTop:'1.2rem',marginBottom:'.5rem',justifyContent:'center'}}>{t.missionBody2.split(':')[0]}</div>
+              <div className="lbl" style={{marginTop:'1.2rem',marginBottom:'.5rem',justifyContent:'center',fontSize:'1rem',color:'rgba(201,168,130,.62)'}}>{t.missionBody2.split(':')[0]}</div>
               <p>{t.missionBody2.split(':').slice(1).join(':').trim()}</p>
             </div>
             <button className="btn" onClick={() => scrollTo("about")}>
@@ -194,21 +194,6 @@ export default function HomePage({ t, onNav }) {
 
       <div className="div" />
 
-      {/* ── PLEDGE ───────────────────────────────────────── */}
-      <section className="sec pledge">
-        <div className="si" style={{ maxWidth: 640, margin: "0 auto", textAlign: "center", position: "relative", zIndex: 1 }}>
-          <Rv>
-            <div className="lbl" style={{ justifyContent: "center" }}>{t.pledgeLbl}</div>
-            <h2 className="pl-ttl">{t.pledgeTitle}</h2>
-            <div className="pl-ln" />
-          </Rv>
-          <Rv d={100}>
-            <p className="pl-tx">{t.pledgeBody}</p>
-            <div className="pl-ln" />
-            <div className="pl-sg">{t.pledgeSig}</div>
-          </Rv>
-        </div>
-      </section>
 
       <Footer t={t} onNav={onNav} />
     </div>
