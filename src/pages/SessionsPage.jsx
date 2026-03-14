@@ -11,12 +11,12 @@ const PSY_CARDS = {
   ar: [
     { photoKey: "svcCourses",  tag: "جلسات نفسية", title: "فردية",       desc: "جلسات نفسية فردية مخصصة لاحتياجاتكِ الشخصية، تساعدكِ على فهم ذاتكِ وتجاوز التحديات النفسية.",  price: "$35" },
     { photoKey: "svcCouples",  tag: "جلسات نفسية", title: "الأزواج",     desc: "جلسات للأزواج تُعزّز التواصل وتُعالج الصراعات وتبني جسوراً أعمق من الفهم المتبادل والحب.",       price: "$50" },
-    { photoKey: "svcTeens",    tag: "جلسات نفسية", title: "الجماعي",    desc: "جلسات آمنة للمراهقين للتعبير عن أنفسهم وفهم مشاعرهم وتطوير أدوات نفسية قوية لحياتهم.",         price: "$45" },
+    { photoKey: "svcTeens",    tag: "جلسات نفسية", title: "الجماعي",    desc: "جلسات علاجية أو إرشادية يجتمع فيها عدد من الأفراد في لقاء واحد، يشارك فيها أكثر من شخص في الوقت نفسه، وقد تشمل أفرادًا من العائلة، أصدقاء، أو أشخاصًا يمرّون بتجارب وظروف متشابهة.", price: "$45" },
   ],
   en: [
     { photoKey: "svcCourses",  tag: "Psychology Sessions", title: "Individual", desc: "One-on-one psychological sessions tailored to your personal needs, helping you understand yourself and overcome challenges with depth and professionalism.", price: "$35" },
     { photoKey: "svcCouples",  tag: "Psychology Sessions", title: "Couples",    desc: "Couples sessions that strengthen communication, address conflict, and build deeper bridges of mutual understanding and love.",                              price: "$50" },
-    { photoKey: "svcTeens",    tag: "Psychology Sessions", title: "Teenagers",  desc: "Safe sessions for teenagers to express themselves, understand their emotions, and develop strong psychological tools for their lives.",                       price: "$45" },
+    { photoKey: "svcTeens",    tag: "Psychology Sessions", title: "Group",      desc: "Therapeutic or counseling sessions where a number of individuals meet together, sharing the space with family members, friends, or people going through similar experiences.", price: "$45" },
   ],
 };
 
